@@ -26,7 +26,6 @@ public class n4344 {
                 avg += list.get(j);
             }
             avg = avg/length;
-
             for(int j = 0; j < length; j++) {
                 if(list.get(j) > avg) 
                     student++;
