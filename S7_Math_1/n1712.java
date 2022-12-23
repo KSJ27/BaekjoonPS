@@ -1,5 +1,5 @@
 package S7_Math_1;
-
+//수식화하기***
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -17,12 +17,9 @@ public class n1712 {
         int c = Integer.parseInt(st.nextToken());
         int n = 0;
 
-        if(b>c) n = -1;
+        if(b>=c) n = -1;
         else {
-            n = a / c;
-            while(a+b*n >= c*n) {
-                n++;
-            }
+            n = a/(c-b)+1;
         }
         
         bw.write(String.valueOf(n));
