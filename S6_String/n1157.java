@@ -16,8 +16,8 @@ public class n1157 {
         char mostIndex = 0;
 
         for(int i = 0; i < input.length(); i++) {
-            if(i > 64 && i < 91) alpha[input.charAt(i)-65]++;
-            else if(i > 96 && i < 123) alpha[input.charAt(i)-97]++;
+            if(input.charAt(i) > 64 && input.charAt(i) < 91) alpha[input.charAt(i)-65]++;
+            else if(input.charAt(i) > 96 && input.charAt(i) < 123) alpha[input.charAt(i)-97]++;
         }
 
         for(char i = 0; i < alpha.length; i++) {
@@ -25,7 +25,7 @@ public class n1157 {
                 most = alpha[i];
                 mostIndex = i;
             }
-            if(most == alpha[i]) {
+            else if(most == alpha[i]) {
                 mostIndex = 63;
             }
         }
